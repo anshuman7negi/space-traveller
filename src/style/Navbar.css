@@ -18,3 +18,12 @@ nav ul {
   gap: 1rem;
   align-items: center;
 }
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(56, 148, 255);
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
