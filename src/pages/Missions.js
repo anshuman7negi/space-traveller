@@ -4,12 +4,13 @@ import Mission from '../components/pages/Mission';
 const Mission = () => {
     return(
       <div className="px-[5rem] py-[2rem] font-manrope">
-        <table>
-          <thead>
+        <table className="border text-left">
+          <thead className="h-16">
             <tr>
-              <th>Mission</th>
-              <th>Description</th>
-              <th>Status</th>
+              <th className="border pl-5 w-1/6">Mission</th>
+              <th className="border pl-5 w-3/6">Description</th>
+              <th className="border pl-5 w-1/6">Status</th>
+              <th className="border pl-5 w-1/6" aria-hidden="true" />
             </tr>
           </thead>
           <tbody>
@@ -19,3 +20,5 @@ const Mission = () => {
       </div>
     )
 }
+
+export default Mission;
