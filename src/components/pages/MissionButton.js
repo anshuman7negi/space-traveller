@@ -1,5 +1,5 @@
 const MissionButton = () => {
-    <button type="submit">Button</button>
+  <button type="submit">Button</button>;
 };
 
 export default MissionButton;

@@ -1,7 +1,4 @@
-import { useSelector } from 'react-redux';
-import Mission from '../components/pages/Mission';
-
-const Mission = () => {
+const Missions = () => {
     return(
       <div className="px-[5rem] py-[2rem] font-manrope">
         <table className="border text-left">
@@ -21,4 +18,4 @@ const Mission = () => {
     )
 }
 
-export default Mission;
+export default Missions;
