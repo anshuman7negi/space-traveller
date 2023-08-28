@@ -1,4 +1,5 @@
 const Missions = () => {
+  // eslint-disable-next-line arrow-body-style
   return (
     <div className="px-[5rem] py-[2rem] font-manrope">
       <table className="border text-left">
