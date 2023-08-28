@@ -15,7 +15,7 @@ const Missions = () => {
         </tbody>
       </table>
     </div>
-  </>
+  </>;
 };
 
 export default Missions;
