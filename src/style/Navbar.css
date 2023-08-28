@@ -3,6 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  border-bottom: 2px solid grey;
 }
 
 .NavbarFirstSection {
@@ -16,4 +17,13 @@ nav ul {
   list-style-type: none;
   gap: 1rem;
   align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(56, 148, 255);
+}
+
+nav ul li a.active {
+  text-decoration: underline;
 }
