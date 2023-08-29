@@ -1,32 +1,40 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { rocketData } from '../../redux/rocket/rocketSlice';
-import rocket from '../../assets/rocket.jpg';
 import '../../style/Rocket.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
+  const { rockets, isLoading, isError } = useSelector((state) => state.rockets);
 
   useEffect(() => {
     dispatch(rocketData());
   }, [dispatch]);
 
-  return (
-    <div className="RocketContainer">
+  let content;
+
+  if (isLoading) {
+    content = <p>Loading...</p>;
+  } else if (isError) {
+    content = <p>Error fetching rocket data.</p>;
+  } else {
+    content = (
       <div className="RocketList">
-        <img src={rocket} alt="" />
-        <div className="RocketDetails">
-          <h3>Falcon 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Officia ullam culpa libero ducimus nobis in,
-            debitis maxime ab error quae.
-            Voluptas, alias possimus numquam odio unde provident explicabo qui totam accusamus.
-          </p>
-          <button type="button">Reserve Rocket</button>
-        </div>
+        {rockets.map((rocket) => (
+          <div key={rocket.id} className="RocketItem">
+            <img src={rocket.flickr_images[0]} alt={rocket.name} />
+            <div className="RocketDetails">
+              <h3>{rocket.name}</h3>
+              <p>{rocket.description}</p>
+              <button type="button">Reserve Rocket</button>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
-  );
+    );
+  }
+
+  return <div className="RocketContainer">{content}</div>;
 };
+
 export default Rockets;
