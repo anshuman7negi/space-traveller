@@ -1,9 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Rockets from './components/pages/Rockets';
@@ -13,7 +10,7 @@ import MyProfile from './components/profile';
 
 function App() {
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
     dispatch(getMissions());
   }, [dispatch]);
