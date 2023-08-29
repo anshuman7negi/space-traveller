@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { rocketData } from '../../redux/rocket/rocketSlice';
 import rocket from '../../assets/rocket.jpg';
@@ -6,9 +6,6 @@ import '../../style/Rocket.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
-
-  const data = useSelector((state) => state.rockets);
-  console.log(data);
 
   useEffect(() => {
     dispatch(rocketData());
