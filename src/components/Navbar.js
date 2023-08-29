@@ -9,7 +9,7 @@ const Navbar = () => (
     </div>
     <ul>
       <li>
-        <NavLink exact to="/">
+        <NavLink to="/">
           Rockets
         </NavLink>
       </li>
