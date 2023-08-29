@@ -30,6 +30,14 @@ const rocketSlice = createSlice({
         return rocket;
       });
     },
+    cancelRocket: (state, action) => {
+      state.rockets = state.rockets.map((rocket) => {
+        if (rocket.id === action.payload) {
+          return { ...rocket, reserved: false };
+        }
+        return rocket;
+      });
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -54,6 +62,6 @@ const rocketSlice = createSlice({
   },
 });
 
-export const { reserveRocket } = rocketSlice.actions;
+export const { reserveRocket, cancelRocket } = rocketSlice.actions;
 
 export default rocketSlice.reducer;
