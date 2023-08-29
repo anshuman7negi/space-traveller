@@ -1,12 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { reserveRocket, rocketData } from '../../redux/rocket/rocketSlice';
+import { cancelRocket, reserveRocket, rocketData } from '../../redux/rocket/rocketSlice';
 import '../../style/Rocket.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
   const { rockets, isLoading, isError } = useSelector((state) => state.rockets);
-  console.log(rockets);
 
   useEffect(() => {
     dispatch(rocketData());
@@ -26,8 +25,14 @@ const Rockets = () => {
             <img src={rocket.flickr_images[0]} alt={rocket.name} />
             <div className="RocketDetails">
               <h3>{rocket.name}</h3>
-              <p>{rocket.description}</p>
-              <button type="button" onClick={() => dispatch(reserveRocket(rocket.id))}>Reserve Rocket</button>
+              <p>
+                {rocket.reserved && <span>Reserved </span>}
+                {rocket.description}
+              </p>
+              {
+                rocket.reserved ? (<button type="button" onClick={() => dispatch(cancelRocket(rocket.id))}>cancel Rocket</button>)
+                  : (<button type="button" onClick={() => dispatch(reserveRocket(rocket.id))}>Reserve Rocket</button>)
+              }
             </div>
           </div>
         ))}
