@@ -18,9 +18,9 @@ const MissionButton = ({ id, reserved }) => {
           ? 'text-blue-500 bg-transparent cursor-pointer mt-3 rounded-full px-[1.2rem] py-2 font-medium outline outline-red-500'
           : 'text-gray-500 bg-transparent cursor-pointer mt-3 rounded px-[1.2rem] py-2 font-medium outline outline-gray-400'
       }`}
-      onClick={(e) => click(id)}
+      onClick={() => click(id)}
     >
-      {reserved ? 'Leave mission' : 'Join mission'}
+      {reserved ? 'Leave missions' : 'Join missions'}
     </button>
   );
 };
