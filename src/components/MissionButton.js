@@ -20,7 +20,7 @@ const MissionButton = ({ id, reserved }) => {
       }`}
       onClick={() => click(id)}
     >
-      {reserved ? 'Leave mission' : 'Join mission'}
+      {reserved ? 'Leave missions' : 'Join missions'}
     </button>
   );
 };
