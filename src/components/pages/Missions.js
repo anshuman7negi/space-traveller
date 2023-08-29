@@ -10,7 +10,7 @@ const Missions = () => {
         <div> Loading...</div>
       ) : (
         <table className="border text-left">
-          <thead className="h-16">
+          <thead className="h-15">
             <tr>
               <th className="border pl-5 w-1/6">Mission</th>
               <th className="border pl-5 w-3/6">Description</th>
