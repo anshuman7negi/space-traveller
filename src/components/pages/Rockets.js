@@ -26,7 +26,7 @@ const Rockets = () => {
             <div className="RocketDetails">
               <h3>{rocket.name}</h3>
               <p>
-                {rocket.reserved && <span>Reserved </span>}
+                {rocket.reserved && <span className="reserved">Reserved </span>}
                 {rocket.description}
               </p>
               {
