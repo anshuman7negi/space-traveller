@@ -1,5 +1,5 @@
-import { configureStore } from "@reduxjs/toolkit";
-import missionSlice from "./missions/missionSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import missionSlice from './missions/missionSlice';
 
 const store = configureStore({
   reduce: {
@@ -7,4 +7,4 @@ const store = configureStore({
   },
 });
 
-export default store
+export default store;
