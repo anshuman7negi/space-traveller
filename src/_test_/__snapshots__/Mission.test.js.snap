@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Interactions test will test user interaction 1`] = `
+<tr
+  className="border pl-2"
+>
+  <td
+    className="border pl-5 pt-5 align-top"
+  />
+  <td
+    className="border p-5 text-justify"
+  />
+  <td
+    className="border pl-5"
+  >
+    <span
+      className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-gray-500 text-white"
+    >
+      NOT A MEMBER
+    </span>
+  </td>
+  <td
+    aria-hidden="true"
+    className="border pl-5"
+  >
+    <button
+      className="text-gray-500 bg-transparent cursor-pointer mt-3 rounded px-[1.2rem] py-2 font-medium outline outline-gray-400"
+      onClick={[Function]}
+      type="button"
+    >
+      Join mission
+    </button>
+  </td>
+</tr>
+`;
