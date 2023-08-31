@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { useSelector } from 'react-redux';
-import MyProfile from '../../src/components/profile';
+import MyProfile from '../components/profile';
 
 jest.mock('react-redux', () => ({
   useSelector: jest.fn(),
@@ -19,12 +19,10 @@ describe('MyProfile Component', () => {
   ];
 
   beforeEach(() => {
-    useSelector.mockImplementation((selector) =>
-      selector({
-        missions: mockMissions,
-        rockets: mockRockets,
-      })
-    );
+    useSelector.mockImplementation((selector) => selector({
+      missions: mockMissions,
+      rockets: mockRockets,
+    }));
   });
 
   test('renders joined missions correctly', () => {
