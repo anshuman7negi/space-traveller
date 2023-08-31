@@ -19,28 +19,24 @@ const Missions = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                {missions.map((mission, i) => {
-                  const data = {
-                    id: mission.mission_id,
-                    missionName: mission.mission_name,
-                    description: mission.description,
-                    reserved: mission.reserved,
-                  };
-                  return (
-                    <Mission
-                      key={data.id}
-                      id={data.id}
-                      missionName={data.missionName}
-                      description={data.description}
-                      highlights={i % 2 === 1}
-                      reserved={data.reserved}
-                    />
-                  );
-                })}
-              </td>
-            </tr>
+            {missions.map((mission, i) => {
+              const data = {
+                id: mission.mission_id,
+                missionName: mission.mission_name,
+                description: mission.description,
+                reserved: mission.reserved,
+              };
+              return (
+                <Mission
+                  key={data.id}
+                  id={data.id}
+                  missionName={data.missionName}
+                  description={data.description}
+                  highlights={i % 2 === 1}
+                  reserved={data.reserved}
+                />
+              );
+            })}
           </tbody>
         </table>
       )}
