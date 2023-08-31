@@ -8,7 +8,9 @@ const Rockets = () => {
   const { rockets, isLoading, isError } = useSelector((state) => state.rockets);
 
   useEffect(() => {
-    dispatch(rocketData());
+    if (rockets.length === 0) {
+      dispatch(rocketData());
+    }
   }, [dispatch]);
 
   let content;

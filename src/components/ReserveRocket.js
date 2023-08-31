@@ -10,7 +10,7 @@ const ReserveRocket = () => {
       <table>
         <tbody>
           {rocketData.map((item) => (
-            item.reserve && (
+            item.reserved && (
               <tr key={item.id}>
                 <td>{item.name}</td>
               </tr>
