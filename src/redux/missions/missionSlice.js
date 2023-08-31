@@ -11,6 +11,7 @@ const getMissionsURL = 'https://api.spacexdata.com/v3/missions';
 export const getMissions = createAsyncThunk('missions/getMissions', async (_, api) => {
   try {
     const res = await axios(getMissionsURL);
+    // console.log(res)
     return res.data;
   } catch (err) {
     return api.rejectWithValue('Api failed to fetch');
