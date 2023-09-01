@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MissionButton Component MissionButton component renders correctly 1`] = `
+<DocumentFragment>
+  <button
+    class="text-gray-500 bg-transparent cursor-pointer mt-3 rounded px-[1.2rem] py-2 font-medium outline outline-gray-400"
+    type="button"
+  >
+    Join missions
+  </button>
+</DocumentFragment>
+`;

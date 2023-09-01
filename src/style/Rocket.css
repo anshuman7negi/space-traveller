@@ -1,0 +1,44 @@
+.RocketContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  height: 100vh;
+}
+
+.RocketList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.RocketItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.RocketList img {
+  max-width: 250px;
+}
+
+.RocketDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.RocketDetails button {
+  padding: 0.5rem;
+  max-width: 150px;
+  background-color: rgb(0, 123, 255);
+  color: #fff;
+  border: none;
+}
+
+.reserved {
+  background-color: rgb(24, 162, 184);
+  color: #fff;
+  padding: 1px;
+  border-radius: 5px;
+  margin-right: 5px;
+}

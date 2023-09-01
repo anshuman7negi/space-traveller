@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  border-bottom: 2px solid grey;
+}
+
+.NavbarFirstSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2px;
+}
+
+.space {
+  font-weight: 800;
+}
+
+.image-logo {
+  width: 50px;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  align-items: center;
+  padding-right: 4rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(56, 148, 255);
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
