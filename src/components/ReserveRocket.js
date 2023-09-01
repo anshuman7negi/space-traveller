@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; // Don't forget to import React
 import { useSelector } from 'react-redux';
 
 const ReserveRocket = () => {
