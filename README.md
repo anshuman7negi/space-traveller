@@ -1,7 +1,5 @@
 <h3 align="center"><b>Space Travelers' Hub</b></h3>
 
-<p align="center">Space Travelers' Hub is a single page application (SPA), where users can book rockets and  selecte space missions of SpaceX.</p>
-
 <a name="readme-top"></a> 
 
 # 📗 Table of Contents
