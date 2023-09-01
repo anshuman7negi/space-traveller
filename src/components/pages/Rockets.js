@@ -11,7 +11,7 @@ const Rockets = () => {
     if (rockets.length === 0) {
       dispatch(rocketData());
     }
-  }, [dispatch]);
+  }, [dispatch, rockets.length]);
 
   let content;
 
@@ -32,8 +32,8 @@ const Rockets = () => {
                 {rocket.description}
               </p>
               {
-                rocket.reserved ? (<button type="button" onClick={() => dispatch(cancelRocket(rocket.id))}>cancel Rocket</button>)
-                  : (<button type="button" onClick={() => dispatch(reserveRocket(rocket.id))}>Reserve Rocket</button>)
+                rocket.reserved ? (<button type="button" className="cancel" onClick={() => dispatch(cancelRocket(rocket.id))}>cancel Rocket</button>)
+                  : (<button type="button" className="reserve" onClick={() => dispatch(reserveRocket(rocket.id))}>Reserve Rocket</button>)
               }
             </div>
           </div>

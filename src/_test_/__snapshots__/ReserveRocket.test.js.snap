@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReserveRocket component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="rocketDetails"
+  >
+    <h3>
+      My Rockets
+    </h3>
+    <table>
+      <tbody />
+    </table>
+  </div>
+</DocumentFragment>
+`;

@@ -1,15 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`User Interactions test will test user interaction 1`] = `
+exports[`Mission component renders correctly 1`] = `
 <tr
-  className="border pl-2"
+  className="border pl-2 bg-gray-100"
 >
   <td
     className="border pl-5 pt-5 align-top"
-  />
+  >
+    Sample Mission
+  </td>
   <td
     className="border p-5 text-justify"
-  />
+  >
+    A sample mission description.
+  </td>
   <td
     className="border pl-5"
   >
@@ -28,7 +32,7 @@ exports[`User Interactions test will test user interaction 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Join mission
+      Join missions
     </button>
   </td>
 </tr>

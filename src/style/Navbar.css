@@ -11,6 +11,7 @@ nav {
   align-items: center;
   gap: 1rem;
   padding-top: 2px;
+  padding-left: 2rem;
 }
 
 .space {
@@ -37,4 +38,10 @@ nav ul li a {
 
 nav ul li a.active {
   text-decoration: underline;
+}
+
+.line {
+  background-color: black;
+  width: 1px;
+  height: 26px;
 }
